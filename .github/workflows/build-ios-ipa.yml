@@ -1,0 +1,50 @@
+# Сборка unsigned IPA на macOS в облаке GitHub.
+# Установка на iPhone с Windows: Sideloadly + бесплатный Apple ID.
+name: Build iOS IPA (unsigned)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+jobs:
+  build-ipa:
+    runs-on: macos-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Install CocoaPods
+        run: |
+          cd ios
+          pod install --repo-update
+
+      - name: Build iOS (no code signing)
+        run: flutter build ios --release --no-codesign
+
+      - name: Package IPA
+        run: |
+          cd build/ios/iphoneos
+          mkdir -p Payload
+          cp -r Runner.app Payload/
+          zip -qr tyumen_guide.ipa Payload
+          mkdir -p "$GITHUB_WORKSPACE/build/ios/ipa"
+          mv tyumen_guide.ipa "$GITHUB_WORKSPACE/build/ios/ipa/"
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tyumen-guide-ipa
+          path: build/ios/ipa/tyumen_guide.ipa
+          if-no-files-found: error
