@@ -31,11 +31,10 @@ flutter run
 
 Рабочая схема без Mac и без платного Apple Developer ($99/год):
 
-1. Загрузите проект на **GitHub** (корень репозитория — папка с `pubspec.yaml`).
-2. На GitHub откройте **Actions** → workflow **Build iOS IPA (unsigned)** → **Run workflow**.
-3. После сборки скачайте артефакт **`dublvud-ipa`** → файл `dublvud.ipa`.
-4. На Windows установите [Sideloadly](https://sideloadly.io/) (или AltStore).
-5. Подключите iPhone по USB, в Sideloadly укажите IPA и войдите **Apple ID** — программа подпишет и установит приложение.
+<a href="https://github.com/impactsnoser/tyumen-guide/actions/runs/26632957202/artifacts/7288963351"
+   style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; background: #f5f5f5; border: 1px solid #ddd; border-radius: 10px; text-decoration: none; color: #111; font-size: 15px; font-weight: 500;">
+  ⬇️ Скачать IPA «ДубльВуд»
+</a>
 
 Ограничения бесплатного Apple ID:
 
