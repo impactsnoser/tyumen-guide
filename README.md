@@ -36,4 +36,12 @@
 
 ## ⚙️ Требования
 
-- 📱
+- 📱 iPhone с iOS 15 или новее
+- 🍎 Apple ID (бесплатный)
+- 📦 [SideStore](https://sidestore.io) или [AltStore](https://altstore.io)
+
+---
+
+<div align="center">
+  Сделано с ❤️ для Тюмени
+</div>
