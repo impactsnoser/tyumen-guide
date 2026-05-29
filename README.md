@@ -1,4 +1,4 @@
-## Гид по Тюмени (Flutter)
+## ДубльВуд (Flutter)
 
 Автономное мобильное приложение без внешних API (кроме загрузки тайлов OpenStreetMap) с:
 - списком достопримечательностей
@@ -33,7 +33,7 @@ flutter run
 
 1. Загрузите проект на **GitHub** (корень репозитория — папка с `pubspec.yaml`).
 2. На GitHub откройте **Actions** → workflow **Build iOS IPA (unsigned)** → **Run workflow**.
-3. После сборки скачайте артефакт **`tyumen-guide-ipa`** → файл `tyumen_guide.ipa`.
+3. После сборки скачайте артефакт **`dublvud-ipa`** → файл `dublvud.ipa`.
 4. На Windows установите [Sideloadly](https://sideloadly.io/) (или AltStore).
 5. Подключите iPhone по USB, в Sideloadly укажите IPA и войдите **Apple ID** — программа подпишет и установит приложение.
 

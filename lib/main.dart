@@ -20,11 +20,11 @@ Future<void> main() async {
     // ignore
   }
 
-  runApp(const ProviderScope(child: TyumenGuideApp()));
+  runApp(const ProviderScope(child: DubleVudApp()));
 }
 
-class TyumenGuideApp extends StatelessWidget {
-  const TyumenGuideApp({super.key});
+class DubleVudApp extends StatelessWidget {
+  const DubleVudApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class TyumenGuideApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Tyumen Guide',
+      title: 'ДубльВуд',
       debugShowCheckedModeBanner: false,
       theme: base.copyWith(
         scaffoldBackgroundColor: AppColors.bg,

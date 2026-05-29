@@ -32,7 +32,7 @@ class HomeScreen extends ConsumerWidget {
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(
-        title: const Text('Tyumen Guide'),
+        title: const Text('ДубльВуд'),
       ),
       body: _HomeBody(
         all: all,

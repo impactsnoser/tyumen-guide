@@ -12,7 +12,7 @@ import 'package:tyumen_guide/main.dart';
 
 void main() {
   testWidgets('App builds', (WidgetTester tester) async {
-    await tester.pumpWidget(const TyumenGuideApp());
+    await tester.pumpWidget(const DubleVudApp());
     expect(find.byType(MaterialApp), findsOneWidget);
   });
 }

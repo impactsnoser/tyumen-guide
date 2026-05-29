@@ -29,9 +29,9 @@ class OnboardingScreen extends ConsumerWidget {
       globalBackgroundColor: AppColors.surface,
       pages: [
         PageViewModel(
-          title: 'Офлайн‑гид',
+          title: 'ДубльВуд',
           body:
-              'Все места и маршруты уже внутри приложения. Нужен интернет только для загрузки тайлов карты.',
+              'Гид, навигатор и путеводитель. Все места и маршруты уже внутри приложения — интернет нужен только для карты.',
           image: _HeroIcon(icon: Icons.offline_bolt_outlined),
           decoration: pageDecoration,
         ),

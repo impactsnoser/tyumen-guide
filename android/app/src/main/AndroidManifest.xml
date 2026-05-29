@@ -6,7 +6,7 @@
 
     <!-- Геолокация не обязательна: без разрешения просто не покажем позицию. -->
     <application
-        android:label="Tyumen Guide"
+        android:label="ДубльВуд"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

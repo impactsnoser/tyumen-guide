@@ -165,7 +165,7 @@ class _MapScreenState extends ConsumerState<MapScreen>
                 child: TileLayer(
                   urlTemplate:
                       'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                  userAgentPackageName: 'tyumen_guide',
+                  userAgentPackageName: 'dublvud',
                   tileProvider: _tileProvider,
                 ),
               ),
