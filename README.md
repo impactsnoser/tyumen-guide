@@ -1,45 +1,39 @@
-## ДубльВуд (Flutter)
+<div align="center">
+  <img src="https://img.shields.io/badge/iOS-15%2B-teal?style=flat-square" />
+  <img src="https://img.shields.io/badge/Бесплатно-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Тюмень-guide-orange?style=flat-square" />
+</div>
 
-Автономное мобильное приложение без внешних API (кроме загрузки тайлов OpenStreetMap) с:
-- списком достопримечательностей
-- экраном деталей
-- интерактивной картой (`flutter_map`)
-- экскурсионными маршрутами с линией пути (Polyline)
-- состоянием через `flutter_riverpod`
+# 🏙️ ДубльВуд — Гид по Тюмени
 
-### Запуск
+Всё о Тюмени в одном приложении — места, маршруты, события и советы от местных.  
+Устанавливается через **SideStore** без джейлбрейка.
 
-1) Установите зависимости:
+---
 
-```bash
-flutter pub get
-```
+## ✦ Что внутри
 
-2) Запустите:
+| 📍 Места | 🗺️ Маршруты | 📅 События | ⭐ Советы |
+|----------|------------|-----------|---------|
+| Кафе, парки, достопримечательности | Прогулки и поездки по городу | Актуальные мероприятия | Лайфхаки от местных |
 
-```bash
-flutter run
-```
+---
 
-### Права геолокации
+## 📲 Установка через SideStore
 
-Приложение запрашивает разрешение на геолокацию и отображает текущую позицию на карте.
+**Шаг 1 — Установи SideStore**  
+Скачай с [sidestore.io](https://sidestore.io) и установи на iPhone
 
-### iPhone (IPA) с Windows и бесплатным Apple ID
+**Шаг 2 — Добавь источник**  
+В SideStore: `Sources` → `+` → вставь ссылку на репозиторий
 
-На Windows **нельзя** собрать подписанный IPA локально — нужен macOS. Переписывание на Swift это не меняет.
+**Шаг 3 — Скачай IPA вручную**  
+Или установи напрямую через IPA-файл:
 
-Рабочая схема без Mac и без платного Apple Developer ($99/год):
+> **[⬇️ Скачать IPA — ДубльВуд](https://github.com/impactsnoser/tyumen-guide/actions/runs/26632957202/artifacts/7288963351)**
 
-<a href="https://github.com/impactsnoser/tyumen-guide/actions/runs/26632957202/artifacts/7288963351"
-   style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; background: #f5f5f5; border: 1px solid #ddd; border-radius: 10px; text-decoration: none; color: #111; font-size: 15px; font-weight: 500;">
-  ⬇️ Скачать IPA «ДубльВуд»
-</a>
+---
 
-Ограничения бесплатного Apple ID:
+## ⚙️ Требования
 
-- подпись действует **~7 дней**, потом нужно переустановить;
-- нельзя опубликовать в App Store / TestFlight без платной подписки Developer;
-- лучше использовать отдельный Apple ID, не основной.
-
-Платный Apple Developer нужен только для App Store и TestFlight.
+- 📱
